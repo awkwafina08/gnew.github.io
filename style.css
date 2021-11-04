@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #5B5B5B;
+    color: white;
+}
+.header{
+    display: flex;
+    background-color: gray;
+    width: 100%;
+}
+.menu{
+    width: 15%;
+    text-align: center;
+    font-size: 1.0rem;
+    padding: 10px;
+}
+.menu:hover{
+    background-color: #949494;
+}
+#logo{
+    font-family: 'Lobster', cursive;
+    color: #E15B5B;
+}
+.light-box{
+    border-radius: 5px;
+    width: 50%;
+    height: 320px;
+    background-color: #EDEDED;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    opacity: 1.0;
+    z-index: 50;
+    color: black;
+}
+
+.head-box > h3{
+    padding-left: 10px;
+}
+.date-box{
+    padding-left: 10px;
+    display: flex;
+}
+
+.date-box > input{
+    width: 30%;
+}
+.footer-box{
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.search-box{
+    padding-left: 10px;
+}
+.search-btn{
+    float: right;
+    margin-left: 5px;
+    border: none;
+    border-radius: 2px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #CFCFCF;
+}
+.close-btn{
+    float: right;
+    margin-left: 5px;
+    border: none;
+    border-radius: 2px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #CFCFCF;
+}
+.hide{
+    display: none !important;
+}
+.content-box{
+    display: flex;
+}
+.main{
+    padding-top: 10px;
+}
+.content-box > .img-box{
+    width: 25%;
+    height: auto;
+}
+img{
+    width: 100%;
+}
+.content-box > h3 {
+    width: 75%;
+}
+.footer h2{
+    margin: 0px;
+}
+.social-icon{
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.social-icon>li{
+    margin: 10px;
+}
+.footer{
+    text-align: center;
+    background-color: gray;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+@media only screen and (max-width: 767px){
+    .date-box{
+        flex-direction: column;
+    }
+    .date-box > input{
+        width: 50%;
+    }
+    .date-box > p{
+        width: 50%
+    }
+    .content-box{
+        flex-direction: column;
+    }
+    .content-box > .img-box{
+        width: 50%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+@media only screen and (min-width: 768px){
+    .content-box{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .content-box > .img-box {
+        padding: 20px;
+        width: 25%;
+    }
+    .content-box > .main-content{
+        width: 75%;
+    }
+    .content-box > h3{
+        margin-top: 0px;
+    }
+    .main{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .topheading-box > .img-box{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .date-box{
+        padding-top: 10px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .date-box > p{
+        width: 15%;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .date-box > #start-date{
+        width: 75%;
+        height: 20px;
+        margin-top: 10px;
+    }
+    .date-box > #end-date{
+        width: 75%;
+        height: 20px;
+        margin-top: 10px;
+    }
+    .light-box{
+        width: 400px;
+    }
+    .footer-box{
+        margin-top: 80px;
+    }
+    
+
+}
+@media only screen and (min-width: 992px){
+    .topheading-box > .img-box{
+        margin-left: auto;
+        margin-right: auto;
+        width: 792px;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="jquery.js"></script>
+        <script src="custom.js"></script>
+        <!--Google Font Roboto-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://kit.fontawesome.com/293dbbaba2.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="menu" id="logo">BREAKING NEWS</div>
+            <div class="menu" id="home">NEWS</div>
+            <div class="menu" id="search-menu">SEARCH</div>
+        </header>
+        <div class="lds-dual-ring"></div>
+        <main class="main">
+        </main>
+        <div class="light-box hide" id="light-box">
+            <div class="head-box">
+                <h3>SEARCH</h3>
+                <hr>
+            </div>
+            <div class="search-box">
+                <p>Enter keywords</p>
+                <input type="text" id="search-key" placeholder="Ex: covid">
+                <span id="keyword-mess"></span>
+            </div>
+            <div class="date-box">
+                <p>From</p>
+                <input type="date" id="start-date">
+                <p>To</p>
+                <input type="date" id="end-date"> 
+            </div>
+            <div class="footer-box">
+                <button type="button" class="search-btn">Search</button>
+                <button type="button" class="close-btn">Close</button>
+            </div>
+        </div>
+        <footer class="footer">
+            <div>
+                <h2>Follow Us</h2>
+                <ul class="social-icon">
+                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
